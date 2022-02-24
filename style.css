@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    height: max-content;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(226, 43%, 10%);
+    font-family: 'Rubik', sans-serif;
+    color: #fff;
+    font-size: 18px;
+}
+
+p {
+    font-size: 16px;
+    color: hsl(236, 100%, 87%);
+}
+
+.hidden {
+    display: none !important;
+}
+
+.container {
+    max-width: 1100px;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.container-card {
+    border-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.container-card img {
+    position: relative;
+    width: 70px;
+    top: -3%;
+    left: 65%;
+}
+
+.card {
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px;
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.card:hover {
+    background-color: hsl(236, 41%, 34%);
+}
+
+.card-title {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-title p {
+    font-size: 18px;
+    color: #fff;
+}
+
+.card-title img {
+    width: 15%;
+    cursor: pointer;
+}
+
+.card-content h1 {
+    font-weight: 300;
+    font-size: 50px;
+    padding-bottom: 5px;
+}
+
+.card-content p {
+    font-size: 14px;
+}
+
+.orange {
+    background-color: hsl(15, 100%, 70%);
+}
+
+.blue {
+    background-color: hsl(195, 74%, 62%);
+}
+
+.red {
+    background-color: hsl(348, 100%, 68%);
+}
+
+.green {
+    background-color: hsl(145, 58%, 55%);
+}
+
+.purple {
+    background-color: hsl(264, 64%, 52%);
+}
+
+.yellow {
+    background-color: hsl(43, 84%, 65%);
+}
+
+.card-profile {
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.profile-info {
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    background-color: hsl(246, 80%, 60%);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.profile-info h1 {
+    font-weight: 300;
+    margin-top: 3px;
+    margin-bottom: 40px;
+}
+
+.profile-img {
+    width: 70px;
+    height: 70px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.profile-img img {
+    width: 100%;
+}
+
+.profile-content {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.profile-content p {
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.profile-content p:hover {
+    color: #fff;
+}
+
+.active {
+    color: #fff;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.attribution a {
+    color: #fff;
+    font-weight: 500;
+}
+
+.attribution a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1000px) {
+
+    .container {
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin: 100px 0;
+    }
+
+    .profile-info {
+        flex-direction: row;
+        justify-items: space-between;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .profile-info h1 {
+        margin-bottom: 0;
+        font-size: 20px;
+    }
+
+    .profile-info p {
+        font-size: 14px;
+    }
+
+    .profile-img {
+        margin-bottom: 0;
+    }
+
+    .profile-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .card {
+        gap: 5px;
+    }
+
+    .card-content h1 {
+        font-size: 30px;
+    }
+
+    .card-content--daily,
+    .card-content--weekly,
+    .card-content--monthly {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .attribution {
+        position: relative;
+        font-size: 16px;
+    }
+}
