@@ -39,17 +39,15 @@ p {
 
 .container-card {
     border-radius: 15px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
     background-color: #fff;
     overflow: hidden;
+    position: relative;
 }
 
 .container-card img {
-    position: relative;
-    width: 70px;
-    top: -3%;
-    left: 65%;
+    position: absolute;
+    left: 60%;
+    z-index: 1;
 }
 
 .card {
@@ -61,8 +59,11 @@ p {
     padding: 30px;
     height: 100%;
     width: 100%;
+    margin-top: 30%;
     transition: 0.5s;
     cursor: pointer;
+    position: relative;
+    z-index: 999;
 }
 
 .card:hover {
@@ -84,6 +85,11 @@ p {
 .card-title img {
     width: 15%;
     cursor: pointer;
+    position: relative;
+    float: right;
+    height: 30%;
+    object-fit: contain;
+    margin-right: 0.5rem;
 }
 
 .card-content h1 {
@@ -207,6 +213,14 @@ p {
         flex-direction: column;
         gap: 30px;
         margin: 100px 0;
+    }
+    
+    .container-card img {
+        left: 75%;
+    }
+    
+    .card {
+        margin-top: 15%;
     }
 
     .profile-info {
