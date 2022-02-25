@@ -36,7 +36,7 @@ p {
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
-
+/* Modified by Sajana */
 .container-card {
     border-radius: 15px;
     background-color: #fff;
@@ -44,9 +44,10 @@ p {
     position: relative;
 }
 
+/* Modified by Sajana */
 .container-card img {
     position: absolute;
-    left: 60%;
+    left: 60%;  
     z-index: 1;
 }
 
@@ -59,9 +60,11 @@ p {
     padding: 30px;
     height: 100%;
     width: 100%;
+    /* Modified by Sajana */
     margin-top: 30%;
     transition: 0.5s;
     cursor: pointer;
+    /* Modified by Sajana */
     position: relative;
     z-index: 999;
 }
@@ -215,10 +218,12 @@ p {
         margin: 100px 0;
     }
     
+    /* Modified by Sajana */
     .container-card img {
         left: 75%;
     }
     
+    /* Modified by Sajana */
     .card {
         margin-top: 15%;
     }
