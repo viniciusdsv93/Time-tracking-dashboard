@@ -43,6 +43,12 @@ p {
     border-bottom-right-radius: 15px;
     background-color: #fff;
     overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-position-x: 90%;
+    background-position-y: -5%;
 }
 
 .container-card img {
@@ -59,7 +65,7 @@ p {
     flex-direction: column;
     gap: 15px;
     padding: 30px;
-    height: 100%;
+    height: 80%;
     width: 100%;
     transition: 0.5s;
     cursor: pointer;
@@ -98,26 +104,33 @@ p {
 
 .orange {
     background-color: hsl(15, 100%, 70%);
+    background-image: url(images/icon-work.svg);
 }
 
 .blue {
     background-color: hsl(195, 74%, 62%);
+    background-image: url(images/icon-play.svg);
 }
 
 .red {
     background-color: hsl(348, 100%, 68%);
+    background-image: url(images/icon-study.svg);
 }
 
 .green {
     background-color: hsl(145, 58%, 55%);
+    background-image: url(images/icon-exercise.svg);
 }
 
 .purple {
     background-color: hsl(264, 64%, 52%);
+    background-image: url(images/icon-social.svg);
 }
 
 .yellow {
     background-color: hsl(43, 84%, 65%);
+    background-image: url(images/icon-self-care.svg);
+    
 }
 
 .card-profile {
@@ -236,6 +249,11 @@ p {
 
     .card {
         gap: 5px;
+        height: 75%;
+    }
+
+    .container-card {
+        height: 180px;
     }
 
     .card-content h1 {
